@@ -1,0 +1,7 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/cc/CPP_Project/ROS/ch2/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ]
+}
