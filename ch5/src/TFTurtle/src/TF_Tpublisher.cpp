@@ -37,7 +37,7 @@ void doMsg(const turtlesim::Pose::ConstPtr &pose){
     tfs.header.frame_id = "world";
     tfs.header.stamp = ros::Time::now();
 
-    // TF ID
+    // TF ID 订阅者和发布者的ID需要一样
     tfs.child_frame_id = "turtle1";
 
     // 设置子级相对于父级的偏移量
@@ -63,7 +63,7 @@ int main(int argc, char **argv){
     ros::init(argc, argv, "TF_Tpublisher");
     ros::NodeHandle nh;
     // 4.创建订阅对象 /turtle1/pose 是对应话题 
-    // 订阅之后发布出去
+    // 订阅海龟的位置信息之后，再发布出去 turtlesim::Pose->类型 /turtle1/pose->服务
     ros::Subscriber sub = nh.subscribe<turtlesim::Pose>("/turtle1/pose", 1000, doMsg);
     ros::spin();
     return 0;
