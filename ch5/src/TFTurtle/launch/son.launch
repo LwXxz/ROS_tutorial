@@ -1,10 +1,12 @@
 <launch>
     <!-- task1 -->
-    <node pkg="TFTurtle" type="TF_Tpublisher" name="Tpublisher" output="screen" />
+    <!-- <node pkg="TFTurtle" type="TF_Tpublisher" name="Tpublisher" output="screen" />
     <node pkg="TFTurtle" type="TF_Tsubscriber" name="Tsub" output="screen" />
     <node pkg="turtlesim" type="turtlesim_node" name="t1"/>
-    <node pkg="turtlesim" type="turtle_teleop_key" name="key1" />
+    <node pkg="turtlesim" type="turtle_teleop_key" name="key1" /> -->
     <!-- task2 -->
-    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="son1" args="0.2 0.8 0.3 0 0 0 /world /son1" output="screen" />
-    <node pkg="tf2_ros" type="static_transform_publisher" name="son2" args="0.5 0 0 0 0 0 /world /son2" output="screen" /> -->
+    <node pkg="tf2_ros" type="static_transform_publisher" name="son1" args="0.2 0.8 0.3 0 0 0 /world /son1" output="screen" />
+    <node pkg="tf2_ros" type="static_transform_publisher" name="son2" args="0.5 0 0 0 0 0 /world /son2" output="screen" />
+    <node pkg="TFTurtle" type="Mcoordinates_P" name="sub_frames" output="screen" />
+
 </launch>
