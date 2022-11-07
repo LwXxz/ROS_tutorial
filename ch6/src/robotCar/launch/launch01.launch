@@ -1,0 +1,6 @@
+<launch>
+    <!-- 设置参数 -->
+    <param name="robot_description" textfile="/home/cc/CPP_Project/ROS/ch6/src/robotCar/urdf/urdf01.urdf" />
+    <!-- 启动 rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" />
+</launch>

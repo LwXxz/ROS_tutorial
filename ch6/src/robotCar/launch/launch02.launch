@@ -1,0 +1,15 @@
+<launch>
+
+    <param name="robot_description" textfile="/home/cc/CPP_Project/ROS/ch6/src/robotCar/urdf/urdf02.urdf" />
+    <!-- 启动 rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" />
+
+    <!-- 02 -->
+    <!-- must 添加关节状态发布节点 -->
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
+    <!-- must 添加机器人状态发布节点 -->
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+    <!-- 可选:用于控制关节运动的节点 会生成关节控制的UI，用于测试关节运动是否正常 -->
+    <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" />
+
+</launch>

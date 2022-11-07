@@ -6,10 +6,11 @@
         "limitSymbolsToIncludedHeaders": false
       },
       "includePath": [
-        "/home/cc/CPP_Project/ROS/ch2/devel/include/**",
         "/opt/ros/noetic/include/**",
         "/home/cc/CPP_Project/ROS/ch5/src/TFTrans/include/**",
-        "/usr_temp/include/**"
+        "/home/cc/CPP_Project/ROS/ch5/src/TFTransPrac/include/**",
+        "/home/cc/CPP_Project/ROS/ch5/src/TFTurtle/include/**",
+        "/usr/include/**"
       ],
       "name": "ROS",
       "intelliSenseMode": "gcc-x64",
