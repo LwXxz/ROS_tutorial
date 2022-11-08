@@ -1,0 +1,5 @@
+<robot name="combine" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="/home/cc/CPP_Project/ROS/ch6/src/robotCar/urdf/xacro043.xacro" />
+    <xacro:include filename="/home/cc/CPP_Project/ROS/ch6/src/robotCar/urdf/camera.xacro" />
+    <xacro:include filename="/home/cc/CPP_Project/ROS/ch6/src/robotCar/urdf/laser.xacro" />
+</robot>

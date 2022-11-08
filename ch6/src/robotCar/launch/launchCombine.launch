@@ -1,0 +1,8 @@
+<launch>
+    <param name="robot_description" command="/opt/ros/noetic/lib/xacro/xacro -i /home/cc/CPP_Project/ROS/ch6/src/robotCar/urdf/combinLCC.xacro" />
+    
+    <node pkg="rviz" type="rviz" name="rviz" />
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" output="screen" />
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen" />
+    <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" output="screen" />
+</launch>
