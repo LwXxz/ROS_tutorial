@@ -5,3 +5,5 @@
     catkin_make
     source ./devel/setup.bash
     rosrun [package_name] [node_name]
+## reference
+> http://www.autolabor.com.cn/book/ROSTutorials
