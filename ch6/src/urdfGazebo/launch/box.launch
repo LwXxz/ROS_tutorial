@@ -1,0 +1,20 @@
+<launch>
+
+    <!-- 将 Urdf 文件的内容加载到参数服务器 -->
+    <param name="robot_description" textfile="/home/cc/CPP_Project/ROS/ch6/src/urdfGazebo/urdf/box.urdf" />
+
+    <!-- 启动 gazebo -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+    
+    <!-- 在 gazebo 中显示机器人模型 -->
+    <node pkg="gazebo_ros" type="spawn_model" name="model" args="-urdf -model box -param robot_description"  />
+    <!-- 
+    在 Gazebo 中加载一个机器人模型，该功能由 gazebo_ros 下的 spawn_model 提供:
+    -urdf 加载的是 urdf 文件
+    -model mycar 模型名称是 mycar
+    -param robot_description 从参数 robot_description 中载入模型
+    -x 模型载入的 x 坐标
+    -y 模型载入的 y 坐标
+    -z 模型载入的 z 坐标
+    -->
+</launch>
