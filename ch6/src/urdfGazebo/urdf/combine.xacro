@@ -5,5 +5,6 @@
     <xacro:include filename="/home/cc/CPP_Project/ROS/ch6/src/urdfGazebo/urdf/base.xacro" />
     <xacro:include filename="/home/cc/CPP_Project/ROS/ch6/src/urdfGazebo/urdf/camera.xacro" />
     <xacro:include filename="/home/cc/CPP_Project/ROS/ch6/src/urdfGazebo/urdf/laser.xacro" />
+    <xacro:include filename="/home/cc/CPP_Project/ROS/ch6/src/urdfGazebo/urdf/controlMover.xacro" />
     
 </robot>

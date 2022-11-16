@@ -4,7 +4,7 @@
 
     <!-- 启动 gazebo -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name" value="/home/cc/CPP_Project/ROS/ch6/src/urdfGazebo/worlds/car1.world" />
+        <arg name="world_name" value="/home/cc/CPP_Project/ROS/ch6/src/urdfGazebo/worlds/car2control.world" />
     </include>
 
     <!-- 在 gazebo 中显示机器人模型 -->
